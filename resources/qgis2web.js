@@ -119,6 +119,11 @@ var map = new ol.Map({
     })
 });
 
+var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
+map.addControl(layerSwitcher);
+layerSwitcher.hidePanel = function() {};
+layerSwitcher.showPanel();
+
 
     var searchLayer = new SearchLayer({
       layer: lyr_DHARAMPUR_17_SH_1_LR_2,
@@ -135,7 +140,7 @@ var map = new ol.Map({
     
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([640959.576450, 2531885.917059, 641800.704710, 2532429.958075], map.getSize());
+map.getView().fit([640987.457392, 2531886.961506, 641828.585651, 2532431.002522], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1

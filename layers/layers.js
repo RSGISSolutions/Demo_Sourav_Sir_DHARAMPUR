@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:32645").setExtent([640959.576450, 2531885.917059, 641800.704710, 2532429.958075]);
+//ol.proj.get("EPSG:32645").setExtent([640987.457392, 2531886.961506, 641828.585651, 2532431.002522]);
 var wms_layers = [];
 
 
@@ -51,8 +51,8 @@ lyr_DHARAMPUR_17_SH_1_RS_1.set('fieldAliases', {'Id': 'Id', 'RS_PLOT': 'RS_PLOT'
 lyr_DHARAMPUR_17_SH_1_LR_2.set('fieldAliases', {'Id': 'Id', 'PLOT_NO': 'PLOT_NO', 'AREA': 'AREA', });
 lyr_DHARAMPUR_17_SH_1_RS_1.set('fieldImages', {'Id': 'Range', 'RS_PLOT': 'TextEdit', 'AREA': 'TextEdit', });
 lyr_DHARAMPUR_17_SH_1_LR_2.set('fieldImages', {'Id': 'Range', 'PLOT_NO': 'TextEdit', 'AREA': 'TextEdit', });
-lyr_DHARAMPUR_17_SH_1_RS_1.set('fieldLabels', {'Id': 'no label', 'RS_PLOT': 'inline label - always visible', 'AREA': 'inline label - always visible', });
-lyr_DHARAMPUR_17_SH_1_LR_2.set('fieldLabels', {'Id': 'no label', 'PLOT_NO': 'inline label - always visible', 'AREA': 'inline label - always visible', });
+lyr_DHARAMPUR_17_SH_1_RS_1.set('fieldLabels', {'Id': 'hidden field', 'RS_PLOT': 'inline label - visible with data', 'AREA': 'inline label - visible with data', });
+lyr_DHARAMPUR_17_SH_1_LR_2.set('fieldLabels', {'Id': 'hidden field', 'PLOT_NO': 'inline label - visible with data', 'AREA': 'inline label - visible with data', });
 lyr_DHARAMPUR_17_SH_1_LR_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
